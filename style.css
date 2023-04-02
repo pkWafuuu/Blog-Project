@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+.row {
+	max-width: 1200px;
+	padding: 0 12px;
+	margin: 0 auto;
+}
+
+.container {
+	padding: 120px 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+@keyframes radial-hover {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes radial-hover-out {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(0);
+	}
+}
+
+/*
+
+NAV 
+
+*/
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 80px;
+}
+
+.nav__row {
+	max-width: 1600px;
+	padding: 0 12px;
+	margin: 0 auto;
+}
+
+.nav__logo--container {
+	display: flex;
+	align-items: center;
+}
+
+.nav__logo {
+	width: 100%;
+}
+
+.nav__logo--name {
+	color: white;
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.nav__logo--wrapper {
+	width: 40px;
+}
+
+.nav__link {
+	font-size: 18px;
+	margin-left: 20px;
+	color: white;
+}
+
+.nav__link--main {
+	background-color: #fff;
+	color: #0f0f0f;
+	padding: 8px 20px;
+	border-radius: 25px;
+	transition: all 300ms ease;
+}
+
+.nav__link--main:hover {
+	color: #fff;
+	background-color: #0f0f0f;
+}
+
+
+
+
+/* 
+
+LANDING PAGE
+
+*/
+
+#landing-page {
+	min-height: 100vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+							url('./assets/landingpage_bg1.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+
+/* 
+
+HEADER
+
+*/
+
+header {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	max-width: 1300px;
+}
+
+.header__title {
+	font-size: 120px;
+	color: white;
+}
+
+.header__sub-title {
+	color: white;
+	max-width: 600px;
+}
+
+.header__btn {
+	font-size: 16px;
+	font-weight: 600;
+	margin-top: 24px;
+	padding: 8px 16px;
+	border-radius: 5px;
+	letter-spacing: 2px;
+	border: none;
+}
+
+/* 
+
+ACTIVITIES
+
+*/
+
+#activities {
+	display: flex;
+	flex-direction: column;
+}
+
+.actvty__title {
+	text-align: center;
+}
+
+.actvty__links--list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 32px;
+}
+
+.actvty__link--container {
+	width: 50%;
+	height: 400px;
+	padding: 25px;
+}
+
+.actvty__link {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border: 1px solid #000;
+	border-radius: 15px;
+	transition: all 300ms ease;
+	position: relative;
+	overflow: hidden;
+	color: #fff;
+	height: 100%;
+}
+
+.actvty__img--wrapper {
+	width: 100%;
+	position: relative;
+}
+
+.actvty__img {
+	object-fit: cover;
+	width: 100%;
+	filter: blur(4px);
+	transition: all 300ms ease;
+}
+
+
+.actvty__link:hover .actvty__img{
+	filter: blur(0);
+	transform: scale(1.1);
+}
+
+.actvty__link:hover .emirates__black-hover {
+	opacity: 0.3;
+}
+
+.actvty__link--description {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+}
+
+.actvty__link:hover .radial-hover--effect{
+	animation: radial-hover 400ms forwards;
+}
+
+.actvty__link:hover {
+	transform: scale(1.1);
+}
+
+.radial-hover--effect {
+	position: absolute;
+	width: 700px;
+	height: 500px;
+	border-radius: 25%;
+	transform: scale(0);
+	animation: radial-hover-out 300ms ease;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.actvty__icon {
+	font-size: 32px;
+}
+
+.actvty__link--title {
+	font-size: 28px;
+	margin-top: 12px;
+}
+
+
+/* 
+
+EMIRATES
+
+*/
+
+#emirates {
+	background-color: #28282c;
+}
+
+.emirates__title {
+	text-align: center;
+	color: #fff;
+}
+
+.emirates__background--container {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 32px 24px 0 24px;
+}
+
+.emirates__background {
+	width: calc( 100% / 7);
+}
+
+.emirates__background:hover .emirates__black-hover {
+	opacity: 0.7;
+}
+
+.emirates__background:nth-child(even) {
+	padding-top: 10px;
+}
+
+.emirates__bg-img--wrapper {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	margin: 0 4px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.emirates__bg-img {
+	height: 700px;
+	width: 100%;
+	object-fit: cover;
+	transition: all 300ms ease;
+}
+
+.emirates__background:hover .emirates__bg-img {
+	transform: scale(1.1);
+}
+
+.emirates__background:hover .emirates__img--description {
+	opacity: 1;
+	transform: translateY(-50%);
+}
+
+.emirates__black-hover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #1C1D25;
+	opacity: 0;
+	transition: all 450ms ease;
+	z-index: 1;
+}
+
+.emirates__img--description {
+	font-size: 24px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(100%);
+	opacity: 0;
+	color: white;
+	z-index: 1;
+	transition: all 300ms ease;
+}
+
+
