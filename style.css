@@ -185,7 +185,7 @@ ACTIVITIES
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	border: 1px solid #000;
+	border: 1px solid rgb(212, 212, 212);
 	border-radius: 15px;
 	transition: all 300ms ease;
 	position: relative;
@@ -202,7 +202,7 @@ ACTIVITIES
 .actvty__img {
 	object-fit: cover;
 	width: 100%;
-	filter: blur(4px);
+	filter: blur(2px);
 	transition: all 300ms ease;
 }
 
