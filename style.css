@@ -29,6 +29,13 @@ html {
 	padding: 90px 0;
 }
 
+.section__title {
+	text-align: center;
+	font-size: 36px;
+	letter-spacing: 1px;
+	font-weight: 700;
+}
+
 a {
 	text-decoration: none;
 }
@@ -187,10 +194,6 @@ ACTIVITIES
 	min-height: 100vh;
 }
 
-.actvty__title {
-	text-align: center;
-}
-
 .actvty__links--list {
 	display: flex;
 	flex-wrap: wrap;
@@ -290,6 +293,9 @@ EMIRATES
 
 .emirates__title {
 	text-align: center;
+	font-size: 36px;
+	letter-spacing: 1px;
+	font-weight: 600;
 	color: #fff;
 }
 
@@ -360,3 +366,16 @@ EMIRATES
 }
 
 
+/* 
+
+HIGHLIGHTS
+
+*/
+
+.highlights {
+	display: flex;
+}
+
+.highlight {
+	width: calc(100% / 3);
+}
