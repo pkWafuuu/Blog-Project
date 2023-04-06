@@ -374,8 +374,27 @@ HIGHLIGHTS
 
 .highlights {
 	display: flex;
+	margin-top: 32px;
 }
 
 .highlight {
 	width: calc(100% / 3);
+	text-align: center;
+	padding: 20px 20px;
+	margin: 0 8px;
+	border: 2px solid #0f0f0f;
+	border-radius: 10px;
+}
+
+.highlight__img {
+	width: 100%;
+	border-radius: 10px;
+}
+
+.highlight__title {
+	margin-top: 16px;
+}
+
+.highlight__para {
+	margin: 16px 0 24px 0 ;
 }
